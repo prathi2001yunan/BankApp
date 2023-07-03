@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0B0A0A">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="321dp"
+        android:layout_height="343dp"
+        android:layout_marginTop="40dp"
+        app:cardBackgroundColor="#757474"
+        app:cardCornerRadius="40dp"
+
+        app:cardElevation="40dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="304dp"
+                android:layout_height="55dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="6dp"
+                android:layout_marginTop="15dp"
+                android:text="TRANSACTION"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="28sp">
+
+            </TextView>
+
+            <EditText
+                android:id="@+id/editTextTextPersonName"
+                android:layout_width="279dp"
+                android:layout_height="67dp"
+                android:layout_alignParentStart="true"
+
+
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="29dp"
+                android:layout_marginTop="162dp"
+                android:background="#575454"
+                android:drawablePadding="10dp"
+                android:ems="10"
+                android:hint="Enter money to transfer"
+                android:inputType="number|text"
+                android:padding="10dp"
+                android:textColor="#F3EEEE"
+                android:textColorHint="#F1EFEF" />
+
+            <EditText
+                android:id="@+id/editTextTextPersonName1"
+                android:layout_width="279dp"
+                android:layout_height="67dp"
+                android:layout_alignParentStart="true"
+
+
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="29dp"
+                android:layout_marginTop="85dp"
+                android:background="#575454"
+                android:drawablePadding="10dp"
+                android:ems="10"
+                android:hint="Enter Account Name"
+                android:inputType="text"
+                android:padding="10dp"
+                android:textColor="#F3EEEE"
+                android:textColorHint="#F1EFEF" />
+
+            <Button
+                android:id="@+id/button4"
+                android:layout_width="148dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="74dp"
+                android:layout_marginBottom="7dp"
+                android:text="confirm"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textView20"
+                android:layout_width="124dp"
+                android:layout_height="44dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="37dp"
+                android:visibility="gone"
+                android:layout_marginTop="242dp"
+                android:text="BALANCE:"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/textView21"
+                android:layout_width="106dp"
+                android:layout_height="43dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginEnd="45dp"
+                android:visibility="gone"
+                android:layout_marginBottom="57dp"
+                android:text="5000"
+                android:textColor="#F3EFEF"
+                android:textSize="24sp" />
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rec"
+        android:layout_width="402dp"
+        android:layout_height="292dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginBottom="1dp"
+        android:background="#777676"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.428"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardView"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="119dp"
+        android:layout_height="31dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="276dp"
+        android:layout_marginBottom="24dp"
+        android:text="History"
+        android:textColor="#F3EBEB"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/rec"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

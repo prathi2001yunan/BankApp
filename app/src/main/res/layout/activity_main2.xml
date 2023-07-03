@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E2000000"
+    tools:context=".MainActivity2">
+
+    <FrameLayout
+        android:id="@+id/button2"
+        android:layout_width="133dp"
+        android:layout_height="77dp"
+        android:layout_marginTop="28dp"
+        android:background="@drawable/accdetail"
+
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.892"
+        app:layout_constraintStart_toStartOf="parent"
+
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/textView9"
+            android:layout_width="match_parent"
+            android:layout_height="33dp"
+            android:layout_gravity="center"
+
+            android:text="Account Details"
+            android:textAlignment="center"
+            android:textColor="@color/white" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/fram1"
+        android:layout_width="286dp"
+        android:layout_height="78dp"
+        android:layout_marginBottom="356dp"
+
+        android:background="@drawable/fram1"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.432"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <ImageView
+            android:layout_width="45dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/baseline_account_balance_24">
+
+
+        </ImageView>
+
+        <TextView
+            android:layout_width="174dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="Receive History"
+
+            android:textColor="@color/white"
+            android:textSize="21sp">
+
+        </TextView>
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/fram2"
+        android:layout_width="280dp"
+        android:layout_height="78dp"
+        android:layout_marginBottom="260dp"
+        android:background="@drawable/fram1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.458"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <ImageView
+            android:layout_width="45dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/baseline_account_balance_24">
+
+
+        </ImageView>
+
+        <TextView
+            android:layout_width="168dp"
+            android:layout_height="51dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="Deposit Money"
+
+            android:textColor="@color/white"
+            android:textSize="21sp">
+
+        </TextView>
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/fram3"
+        android:layout_width="291dp"
+        android:layout_height="78dp"
+        android:layout_marginBottom="160dp"
+        android:background="@drawable/fram1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.45"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <ImageView
+            android:layout_width="45dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/baseline_account_balance_24">
+
+
+        </ImageView>
+
+        <TextView
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="WithDraw Money"
+
+            android:textColor="@color/white"
+            android:textSize="21sp">
+
+        </TextView>
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/fram4"
+        android:layout_width="291dp"
+        android:layout_height="78dp"
+        android:layout_marginBottom="56dp"
+        android:background="@drawable/fram1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <ImageView
+            android:layout_width="45dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/baseline_account_balance_24">
+
+
+        </ImageView>
+
+        <TextView
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="Transfer Money"
+
+            android:textColor="@color/white"
+            android:textSize="21sp">
+
+        </TextView>
+
+
+    </FrameLayout>
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="144dp"
+        android:layout_height="129dp"
+        android:layout_marginStart="144dp"
+        android:layout_marginEnd="149dp"
+        android:layout_marginBottom="32dp"
+        app:layout_constraintBottom_toTopOf="@+id/fram1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.423"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/rupee" />
+</androidx.constraintlayout.widget.ConstraintLayout>
